@@ -1,0 +1,150 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    width:90vw;
+    justify-content: space-between;
+    margin: 0px 20px;
+    padding: 25px 20px;
+    font-family: var(--font);
+}
+
+.navitems {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#name1 {
+    color: white;
+    cursor: pointer;
+}
+
+.navitems a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navitems a:hover {
+    color: aqua;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.logo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.container {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(247, 247, 247, 0.774);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    margin-top:20px;
+}
+
+h1 {
+    color: rgb(127, 85, 226);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid rgb(113, 64, 226);
+}
+
+button {
+    background-color: rgb(127, 85, 226);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(94, 40, 221);
+}
+
+@media (max-width: 600px) {
+    .navitems {
+        gap: 15px;
+    }
+
+    .nav-logo{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 40px;
+    }
+
+    .navbar {
+        margin: 0px 5px;
+        padding: 20px 5px;
+        font-family: var(--font);
+    }
+
+    .container{
+        width: 270px;
+    }
+}
+
+@media (max-width:530px) {
+    header {
+        font-size: 12px;
+    }
+    
+
+}
